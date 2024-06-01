@@ -1,0 +1,228 @@
+.login-body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.login-right{
+    background-color: rgb(226, 224, 224);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    gap: 1.875rem;    
+    flex-direction: column;
+    color: #008080;
+    height: 100vh;
+    width: 48vw;
+}
+
+.heading{
+    font-size: 2.375rem;
+    font-weight: 600;
+}
+.checkboxContainer{
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    gap: 150px;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.checkInput{
+    height: 20px;
+    width: 20px;
+}
+.inputLabel{
+    font-size:1.75rem;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.05rem;
+    font-family: THICCCOBOI;
+}
+.Input{
+    height: 2.5rem;
+    width: 31.25rem;
+    font-size: 1.25rem;
+    padding: 0.625rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+.login-btn{
+    height: 3.75rem;
+    width: 31.25rem;
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    background-color: #008080;
+    color: white ;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1175px) {
+    .login-btn{
+        width: 25rem;
+    }
+    .inputLabel{
+        font-size: 1.5rem;
+
+    }
+    .Input{
+        width: 25rem;
+    }
+    .checkboxContainer{
+        gap: 100px;
+    }
+}
+@media screen and (max-width:1010px) {
+    
+    .login-btn{
+        width: 20rem;
+    }
+    .inputLabel{
+        font-size: 1.5rem;
+
+    }
+    .Input{
+        width: 20rem;
+        font-size: 1.0rem;
+    }
+    .heading{
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+    .checkboxContainer{
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    
+    
+    
+    
+    .checkboxContainer{
+        gap: 25px;
+        font-size: 18px;
+    }
+    .checkInput{
+        height: 17px;
+        width: 17px;
+    }
+}
+@media screen and (max-width:832px) {
+    .login-btn{
+        width: 17rem;
+    }
+    .inputLabel{
+        font-size: 1.5rem;
+
+    }
+    .Input{
+        width: 17rem;
+        font-size: 1.0rem;
+    }
+    .heading{
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+    
+    .checkboxContainer{
+        gap: 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .login-left{
+        display: none;
+    }
+    .login-right{
+        width: 100vw;
+        height: 96.5vh;
+        border: 12px solid #008080;
+    }
+    .login-btn{
+        width: 28rem;
+    }
+    .inputLabel{
+        font-size: 2rem;
+
+    }
+    .Input{
+        width: 28rem;
+        font-size: 1.3rem;
+    }
+    .heading{
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .checkboxContainer{
+        gap: 150px;
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 584px) {
+    .login-left{
+        display: none;
+    }
+    .login-right{
+        width: 100vw;
+    }
+    .login-btn{
+        width: 20rem;
+    }
+    .inputLabel{
+        font-size: 1.7rem;
+
+    }
+    .Input{
+        width: 20rem;
+        font-size: 1.1rem;
+    }
+    .heading{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .checkboxContainer{
+        gap: 30px;
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 382px) {
+    .login-left{
+        display: none;
+    }
+    .login-right{
+        width: 100vw;
+    }
+    .login-btn{
+        width: 16rem;
+        font-size: 1.2rem;
+    }
+    .inputLabel{
+        font-size: 1.45rem;
+
+    }
+    .Input{
+        width: 16rem;
+        font-size: 1.1rem;
+    }
+    .heading{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .checkboxContainer{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .checkInput{
+        height: 17px;
+        width: 17px;
+    }
+}

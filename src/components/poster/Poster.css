@@ -1,0 +1,62 @@
+.main_container {
+    height: 100vh;
+    width: 52vw;
+    background-color: #0bacac;
+}
+.robot_img, .uno_img, .voltmeter_img{
+    height: 6.25rem;
+    width: 6.25rem;
+}
+.text{
+    text-align: center;
+    color: white;
+    margin-top: 13.75rem;
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
+    margin-right: -1.25rem;
+    -ms-flow-from: 600;
+    letter-spacing: 0.075rem;
+    
+}
+.line{
+    margin-top: 32vh;
+}
+
+@media screen and (max-width: 1004px){
+    
+    .robot_img, .uno_img, .voltmeter_img{
+        height: 5.25rem;
+        width: 5.25rem;
+    }
+    .text{
+        font-size: 2.2rem;
+        margin-top: 13rem;
+    }
+    .line{
+        margin-top: 36vh;
+    }
+}
+@media screen and (max-width:910px) {
+    .robot_img, .uno_img, .voltmeter_img{
+        height: 4.25rem;
+        width: 4.25rem;
+    }
+    .text{
+        font-size: 1.8rem;
+        margin-top: 14rem;
+    }
+    .line{
+        margin-top: 38vh;
+    }
+}
+@media screen and (max-width:795px) {
+    .text{
+        font-size: 1.5rem;
+        margin-top: 14rem;
+        margin-left: 2rem;
+    }
+    .line{
+        margin-top: 40vh;
+    }
+}
+

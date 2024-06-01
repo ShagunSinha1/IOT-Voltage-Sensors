@@ -1,0 +1,305 @@
+.navbar{
+    background-color:rgb(11,172,172);
+    height: 50px;
+    width: 100%;
+}
+
+.display-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.display{
+    display: flex;
+    gap: 5vw;
+    margin-top: 3.5vh;
+    margin-left: 4vw;
+    
+}
+
+.voltage_heading, .current_heading{
+    margin-top: 1.4vh;
+    color: rgb(11,172,172);
+    font-size: 16px;
+}
+.current, .voltage{
+    background-color: rgb(224, 220, 220);
+    height: 57vh;
+    width: 25vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid rgb(11,172,172);
+    border-radius: 8px;
+}
+.voltage_body, .current_body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 18px;
+    font-size: 21px;
+    font-family: THICCCOBOI;
+}
+#voltage_placeholder, #current_placeholder{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#voltage_input, #current_input{
+    height: 4vh;
+    font-size: 14px;
+    width: 13vw;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.limit{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    margin-top: 4vh;
+    
+    font-size: 21px;
+    font-weight: 500;
+    font-family: THICCCOBOI;
+    height: 25vh;
+    width: 57vw;
+    background-color: rgb(224, 220, 220);
+    border: 5px solid rgb(11,172,172);
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.over_voltage_limit, .over_current_limit,.under_voltage_limit{
+    display: flex;
+    gap: 50px;
+}
+
+#over_voltage, #over_current, #under_voltage{
+    border: none;
+    border-radius: 8px;
+    height: 4.3vh;
+    font-size: 16px;
+}
+
+.display-right{
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.fault_indicator{
+    margin-top: 10vh;
+    
+    height: 28vh;
+    width: 30vw;
+    border: 5px solid rgb(11,172,172);
+    border-radius: 8px;
+    margin-left: 5.5vw;
+    background-color: rgb(191, 227, 224);
+
+   
+    box-shadow: 3px 3px 5px rgb(11,172,172);
+}
+.fault_indicator h1{
+    text-align: center;
+    color: rgb(11,172,172);
+    margin-top: 1vh;
+    
+}
+.indicator-body{
+    margin-top: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: THICCCOBOI;
+}
+.indicator_1, .indicator_2, .indicator_3{
+    height: 2.1vh;
+    width: 2.1vh;
+    border: 3px solid rgb(63, 62, 62);
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+.over_voltage, .over_current, .under_voltage{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.resolution{
+    height: 38vh;
+    width: 30vw;
+    border: 5px solid rgb(11,172,172);
+    border-radius: 8px;
+    margin-left: 5.5vw;
+    box-shadow: 3px 3px 5px rgb(11,172,172);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(191, 227, 224);
+}
+.resolution h1{
+    text-align: center;
+    color: rgb(11,172,172);
+    margin-top: 2vh;
+}
+.current_res, .voltage_res{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    gap: 5px;
+}
+#current_resolution, #voltage_resolution{
+    font-weight: 500;
+    font-size: 21px;
+    font-family: THICCCOBOI;
+    display: flex;
+}
+#current-regulation, #voltage-regulation{
+    height: 35px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+@media screen and (max-width:1255px) {
+    h1{
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width:990px) {
+    h1{
+        font-size: 22px;
+    }
+    
+}
+@media screen and (max-width:914px) {
+    .display-main{
+        flex-direction: column-reverse;
+    }
+    .display-right{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5vh;
+        
+    }
+    .fault_indicator,.resolution{
+        height: 34vh;
+        width: 32vw;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .indicator-body{
+        margin-top: 20px;
+    }
+    #current_resolution,#voltage_resolution{
+        font-size: 18px;
+    }
+    #current-regulation,#voltage-regulation{
+        height: 23px;
+        font-size: 14px;
+    }
+    .display{
+        margin-left: 9.5vw;
+    }
+    .voltage,.current{
+        width: 32.5vw;
+        margin-left: 0;
+    }
+    #voltage_placeholder,#current_placeholder{
+        font-size: 19px;
+    }
+    #voltage_input,#current_input{
+        width: 11rem;
+    }
+    .limit{
+        margin-left: 23vw;
+        display: flex;
+        
+        align-items: center;
+    }
+    .over_current_limit,.over_voltage_limit,.under_voltage_limit{
+        
+        font-size: 18px;
+        margin-left: 0;
+        gap: 10px;
+    }
+    #over_voltage,#under_voltage,#over_current{
+        width: 12rem;
+    }
+}
+@media screen and (max-width:720px) {
+    h1{
+        font-size: 20px;
+    }
+    .fault_indicator,.resolution{
+        width: 18rem;
+    }   
+    .voltage,.current{
+        width: 18rem;
+        
+    }
+    .display,.display-right{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .limit{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .indicator-body p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:539px) {
+    #current_resolution,#voltage_resolution{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:499px) {
+    .display,.display-right,.limit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .voltage,.current,.limit{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fault_indicator,.resolution{
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+    }
+    .limit{
+        padding: 10px 0 ;
+        height: fit-content;
+    }
+    .over_current_limit,.over_voltage_limit,.under_voltage_limit{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
+
